@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0763AC41-4D0C-4573-AEB4-1151F93A0F65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>axxctrls</RootNamespace>
+    <AssemblyName>axxctrls</AssemblyName>
+    <MyType>Windows</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>axxctrls.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>axxctrls.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="uc\ROActiveStatus.Designer.vb">
+      <DependentUpon>ROActiveStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ROActiveStatus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="uc\ROCheckBox.Designer.vb">
+      <DependentUpon>ROCheckBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ROCheckBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\ROCheckComboBox.Designer.vb">
+      <DependentUpon>ROCheckComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ROCheckComboBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\ROCheckDateTimePicker.Designer.vb">
+      <DependentUpon>ROCheckDateTimePicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ROCheckDateTimePicker.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\ROCheckTextBox.Designer.vb">
+      <DependentUpon>ROCheckTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ROCheckTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\ROComboBox.Designer.vb">
+      <DependentUpon>ROComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ROComboBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\RODateTimePicker.Designer.vb">
+      <DependentUpon>RODateTimePicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\RODateTimePicker.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\RONumericUpDown.Designer.vb">
+      <DependentUpon>RONumericUpDown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\RONumericUpDown.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\ROSmartBox.Designer.vb">
+      <DependentUpon>ROSmartBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ROSmartBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc\ROTextBox.Designer.vb">
+      <DependentUpon>ROTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ROTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="utils\clsTextBox.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="uc\ROActiveStatus.resx">
+      <DependentUpon>ROActiveStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\ROCheckBox.resx">
+      <DependentUpon>ROCheckBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\ROCheckComboBox.resx">
+      <DependentUpon>ROCheckComboBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\ROCheckDateTimePicker.resx">
+      <DependentUpon>ROCheckDateTimePicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\ROCheckTextBox.resx">
+      <DependentUpon>ROCheckTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\ROComboBox.resx">
+      <DependentUpon>ROComboBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\RODateTimePicker.resx">
+      <DependentUpon>RODateTimePicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\RONumericUpDown.resx">
+      <DependentUpon>RONumericUpDown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\ROSmartBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ROSmartBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc\ROTextBox.resx">
+      <DependentUpon>ROTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ge.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\le.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>
